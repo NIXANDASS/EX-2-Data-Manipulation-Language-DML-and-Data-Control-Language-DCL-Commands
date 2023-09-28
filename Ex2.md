@@ -30,33 +30,40 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### Q1) Update all the records of manager table by increasing 10% of their salary as bonus.
 
 ### QUERY:
-
+``` UPDATE manager set salary=salary+(salary*0.10),annualsalary = annualsalary + (annualsalary * 0.10); ```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/e7053dd2-ef93-4568-91e7-5d71a5d722ca)
+
 
 ### Q2) Delete the records from manager table where the salary less than 2750.
 
 
 ### QUERY:
-
+```delete from manager where salary < 2750;```
 
 ### OUTPUT:
+
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/9212a98f-c9fa-4912-a5cc-7d8bed04ee4a)
 
 ### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary)
 
 
 ### QUERY:
-
+``` SELECT ename as "Name", salary * 12 as "Annual Salary" from manager; ```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/c3ab2084-04b6-41eb-9efa-be0ebd274beb)
+
 
 ### Q5)	List the names of Clerks from emp table.
 
 
 ### QUERY:
-
+```SELECT ename from manager where designation='clerk';```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/f2e5fac1-7883-4070-b45b-33f61ca88013)
 
 
 ### Q6)	List the names of employee who are not Managers.
