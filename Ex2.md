@@ -71,17 +71,21 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 
+ ```SELECT ENAME FROM MANAGER WHERE DESIGNATION!='manager';```
+
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/609c592f-e3e3-45c8-9609-448d4a336578)
 
 
 ### Q7)	List the names of employees not eligible for commission.
 
 
 ### QUERY:
-
+```SELECT ENAME FROM MANAGER WHERE commission=0;```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/a4011624-ab05-4a75-a74a-0be0e70967d7)
 
 
 ### Q8)	List employees whose name either start or end with ‘s’.
@@ -89,17 +93,20 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 
+```select ename from manager where ename like '%s' or ename like 's%';```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/b7e8cd10-23a4-45be-9a6b-5ed76f129cdb)
 
 
 ### Q9) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
 
 
 ### QUERY:
-
+```select ename,designation as "job",deptno,hiredate from manager order by hiredate asc;```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/a43604cc-9757-4c68-8cbf-70418da11ff1)
 
 
 ### Q10) List the Details of Employees who have joined before 30 Sept 81.
@@ -107,8 +114,10 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 
+```select * from manager where hiredate<'30-SEP-81';```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/5b2c3a60-bd4d-479e-958f-0c155e8a7571)
 
 
 ### Q11)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
