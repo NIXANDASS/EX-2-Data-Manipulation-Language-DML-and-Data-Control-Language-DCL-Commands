@@ -125,8 +125,10 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 
+```SELECT ENAME,DEPTNO,SALARY FROM MANAGER ORDER BY DEPTNO ASC,SALARY DESC;```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/e0363879-3aff-4849-bbcc-c68ca5ae44df)
 
 
 ### Q12) List the names of employees not belonging to dept no 30,40 & 10
@@ -134,28 +136,36 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 
+```SELECT ENAME FROM MANAGER WHERE DEPTNO NOT IN (30,40,10);```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/10748743-3842-4a29-bbb0-7577ae5fc8b3)
 
 ### Q13) Find number of rows in the table EMP
 
 ### QUERY:
 
+```select count(*) from manager;```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/84d8c28e-4fda-41b9-a748-007dbe19c23c)
 
 
 ### Q14) Find maximum, minimum and average salary in EMP table.
 
 ### QUERY:
 
+```select max(salary),min(salary),avg(salary) from manager;```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/312d698c-a16a-44d3-8c70-94a544d8699b)
 
 
 ### Q15) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
 
 ### QUERY:
 
+```SELECT designation AS job, COUNT(*) AS num_emp FROM manager GROUP BY designation ORDER BY num_emp DESC;```
 
 ### OUTPUT:
+![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/2df4a33c-c386-401d-8414-4c4ffb701335)
