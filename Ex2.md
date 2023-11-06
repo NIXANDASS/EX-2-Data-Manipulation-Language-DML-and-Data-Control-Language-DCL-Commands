@@ -35,9 +35,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### OUTPUT:
 ![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/e7053dd2-ef93-4568-91e7-5d71a5d722ca)
 
-
 ### Q2) Delete the records from manager table where the salary less than 2750.
-
 
 ### QUERY:
 ```delete from manager where salary < 2750;```
@@ -48,16 +46,13 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary)
 
-
 ### QUERY:
 ``` SELECT ename as "Name", salary * 12 as "Annual Salary" from manager; ```
 
 ### OUTPUT:
 ![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/c3ab2084-04b6-41eb-9efa-be0ebd274beb)
 
-
 ### Q5)	List the names of Clerks from emp table.
-
 
 ### QUERY:
 ```SELECT ename from manager where designation='clerk';```
@@ -65,21 +60,16 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### OUTPUT:
 ![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/f2e5fac1-7883-4070-b45b-33f61ca88013)
 
-
 ### Q6)	List the names of employee who are not Managers.
-
 
 ### QUERY:
 
  ```SELECT ENAME FROM MANAGER WHERE DESIGNATION!='manager';```
 
-
 ### OUTPUT:
 ![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/609c592f-e3e3-45c8-9609-448d4a336578)
 
-
 ### Q7)	List the names of employees not eligible for commission.
-
 
 ### QUERY:
 ```SELECT ENAME FROM MANAGER WHERE commission=0;```
@@ -87,9 +77,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### OUTPUT:
 ![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/a4011624-ab05-4a75-a74a-0be0e70967d7)
 
-
 ### Q8)	List employees whose name either start or end with ‘s’.
-
 
 ### QUERY:
 
@@ -111,7 +99,6 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### Q10) List the Details of Employees who have joined before 30 Sept 81.
 
-
 ### QUERY:
 
 ```select * from manager where hiredate<'30-SEP-81';```
@@ -122,7 +109,6 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### Q11)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
 
-
 ### QUERY:
 
 ```SELECT ENAME,DEPTNO,SALARY FROM MANAGER ORDER BY DEPTNO ASC,SALARY DESC;```
@@ -132,7 +118,6 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### Q12) List the names of employees not belonging to dept no 30,40 & 10
-
 
 ### QUERY:
 
