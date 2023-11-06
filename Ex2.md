@@ -1,31 +1,28 @@
-# EX 2 Data Manipulation Language (DML) Commands and built in functions in SQL
-### AIM:
+## EX 2 Data Manipulation Language (DML) Commands and built in functions in SQL
+#### DATE:
+#### AIM:
 To create a manager database and execute DML queries using SQL.
-
-### DML(Data Manipulation Language)
+#### DML(Data Manipulation Language)
 <div align="justify">
-The SQL commands that deal with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements. It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.
-</div>
+The SQL commands that deal with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements. It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.</div>
 
-### List of DML commands: 
+#### List of DML commands: 
 <div align="justify">
 INSERT: It is used to insert data into a table.<br>
 UPDATE: It is used to update existing data within a table.<br>
 DELETE: It is used to delete records from a database table.<br>
 </div>
 
-### Create the table as given below:
-```sql
-create table manager(enumber number(6),ename char(15),salary number(5),commission number(4),annualsalary number(7),Hiredate date,designation char(10),deptno number(2),reporting char(10));
+#### Create the table as given below:
+``` create table manager(enumber number(6),ename char(15),salary number(5),commission number(4),annualsalary number(7),Hiredate date,designation char(10),deptno number(2),reporting char(10));
 ```
-### insert the following values into the table
+#### insert the following values into the table
 ```sql
 insert into manager values(7369,'Dharsan',2500,500,30000,'30-June-81','clerk',10,'John');
 insert into manager values(7839,'Subu',3000,400,36000,'1-Jul-82','manager',null,'James');
 insert into manager values(7934,'Aadhi',3500,300,42000,'1-May-82','manager',30,NULL);
 insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bond');
 ```
-
 #### Q1) Update all the records of manager table by increasing 10% of their salary as bonus.
 #### QUERY:
 ``` UPDATE manager set salary=salary+(salary*0.10),annualsalary = annualsalary + (annualsalary * 0.10); ```
@@ -97,4 +94,3 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 #### OUTPUT:
 ![image](https://github.com/NIXANDASS/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118781418/2df4a33c-c386-401d-8414-4c4ffb701335)
 #### RESULT:
-A manager database was created and DML queries were executed using SQL.
